@@ -1,0 +1,104 @@
+Package Management Tools
+------------------------------------
+
+YUM/APT
+
+An APT/YUM repository is a collection of packages 
+APT/YUM repository allows you to perform package install, removal, upgrade operations on individual packages.
+
+To install packages
+
+apt-get install packagename
+
+apt-get install tree
+
+Lets update the repository
+
+Step 1: Update apt  repository - sudo apt-get update
+Step 2: Install the package - sudo apt-get install package_name - sudo apt-get install tree
+
+To remove the package
+sudo apt-get remove tree
+
+--------------------------------------------------------------------------------------------------------------------------
+Editing the file using vi editor/vim editor/nano editor
+
+Editors in linux
+
+To create a file
+i  - to go to insert mode
+
+:wq  -- save and exit
+
+:q!  -- exit without saving
+
+Default mode - command mode
+
+
+Esc - to come out of insert mode  to command mode
+dd   - to delete a line
+
+yy  --  to copy the line
+p  - to paste  below
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://www.atlassian.com/git/tutorials/what-is-version-control
+
+Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are 
+software tools that help software teams manage changes to source code over time. As development environments have accelerated, version control 
+systems help software teams work faster and smarter. They are especially useful for DevOps teams since they help them to reduce development 
+time and increase successful deployments.
+
+Git is a distributed version control system that records different versions of a file (or set of files). It lets users access, compare, update, and 
+distribute any of the recorded version(s) at any time. However, GitHub is mainly a hosting platform for hosting Git repositories online.
+
+Git is a version control system that developers use all over the world. It helps you track different versions of your code and collaborate with other 
+developers. If you are working on a project over time, you may want to keep track of which changes were made, by whom, and when those changes were made.
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and 
+efficiency.
+
+
+
+Version control systems are tools that help a software team manage changes to source code over time.
+
+For almost all software projects, the source code is a precious asset whose value must be protected. 
+
+VCS are sometimes known as SCM (Source Code Management) tool.
+
+Most widely used modern version control system in the world today is Git. Git is a mature, actively maintained open source tool originally developed in 2005 by Linus Torvalds, the famous creator of the Linux operating system kernel. 
+
+Two types Version Controlloing
+1) Centrailized Version controlling 
+2) Distributed Version controlling
+
+Git is Distributed Version controlling.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+What is gitbash ?
+
+How to configure username and email for git
+
+$ git init
+
+$ git config --global   user.name "username"
+$ git config --global   user.email  "user email ID"
+
+To check the configurations
+$ git config  --global  --list
+
+working directory ------> staging area -------> Local Repository
+
+untracked files
+staged files
+commited files
+
++++++++++++++
+
+How to make working directory as git repository
+
+$ git init
+-Observation -
+
+

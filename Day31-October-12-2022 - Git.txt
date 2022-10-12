@@ -1,0 +1,250 @@
+Virtualization?
+
+Virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware.
+
+
+Virtualization uses software to create an abstraction layer over computer hardware that allows the hardware elements of a single computer
+processors, memory, storage and more—to be divided into multiple virtual computers, commonly called virtual machines (VMs)
+
+AWS is a?
+
+Amazon Web Services is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and 
+governments, on a metered pay-as-you-go basis
+
+Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services 
+from data centers globally.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14-08-2021
+
+Difference between root user and IAM user
+Sign into the AWS Console
+We will walkthrough the some AWS Services
+We will create a Linux Server using the EC2 Service
+We will SSH to that Linux Server using Mobaxterm
+We will get to know the importance of the Mobaxterm Tool/Software
+Security Groups
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16-08-2021
+
+Downloand & Install the Git Bash in your local machine
+
+https://git-scm.com/downloads
+
+ssh -i "keypair" username@ip			- to make an ssh connection
+sudo yum update -y 				- to update the packages
+sudo su 					- to switch as root user
+exit					- to exit
+clear 					- to clear the terminal
+yum 					- to install or remove the packages (warehouses of the linux)
+
+YUM is the primary package management tool for installing, updating, removing, and managing software packages in Red Hat Enterprise Linux
+ll					- to list the files and directories
+ls 					- to list the files and directories
+ls -lha 					- to list the files and directories
+pwd					- to let you know the current working location
+cd					- change the directory
+cd ..					- to come out of that directory/folder
+mkdir dirname				- to create a directory with the name apple 
+shift + insert 				- to paste the content
+cat 					- to print the content of any file
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+17-08-2021
+
+uname -a 					- to display linux information
+sudo hostname <name of the new hostname>	- to change the hostname
+ls -lha 					- to list the files and directories(including hidden files)
+rm -rf 					- to delete the directory
+cd (name of the directory) 			- is used to switch into any particular directory
+cd ..					- to come outside from the respective directory
+cd ~ or cd (enter) 				- it will take you to the home location
+vi (name of the file to create) 			- it will also new file
+touch (name of the file) 			- it will help us to create an empty file
+date					- to check the date
+cal					- to check the calendar
+cp 					- copy the files
+rm -rf dir1/dir2/dir3/apple.txt			- to delete the files and directories
+mv dir1/dir2/dir3/apple.txt dir4/		- to move the files and directories
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+18-08-2021
+
+whoami 					- it will let you know with which user you are working
+cat /proc/cpuinfo 				- to get the CPU info
+cat /proc/meminfo 				- to get the memory info
+free -h / free -m				- to display the available and used memory
+df -h 					- to know the available storage on the machine
+vi dir1/dir2/banana.md 			- provide the exact path of the file and edit it from anywhere
+cat dir1/dir2/banana.md 			- to display the content
+sed -i '3d' banana.txt 				- Delete a particular line from the file in linux
+sed -i 's/13.233.149.137/13.233.143.150/g' *.txt		- to replace or update the content/IP
+dd					- is the linux command to delete a line by opening the file (not to be in insert mode)
+echo > dir1/dir2/banana.md 			- to empty the file
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+20-08-2021
+
+ls | grep apple.yaml 				- to list the exact file
+sudo find / -name xyz.txt  			- to find the path and exact path of any file
+ls *.yaml					- to list the files that matching the pattern
+ls *.txt					- to list the files that matching the pattern
+id 					- to give the info about the user you switched
+curl ifconfig.co 				- to display the public IP of the ec2 instance
+last reboot 				- last reboot information
+uptime 					- since how much time your machine is up and running
+head -n 2 banana.txt  			- to display top 2 lines
+tail -n 3 banana.txt  				- to display bottom 3 lines from the file
+grep -Rw '/home/centos/banana.yaml' -e 'fruit' 	- to search particular keyword
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+23-08-2021
+
+Source control (or version control) is the practice of tracking and managing changes to code. 
+Source control management (SCM) systems provide a running history of code development and help to resolve conflicts when 
+merging contributions from multiple sources.
+
+Git is a DevOps tool used for source code management. It is a free and open-source version control system used to handle small to very 
+large projects efficiently. Git is used to tracking changes in the source code, enabling multiple developers to work together on non-linear
+development
+
+GitHub/Bittbucket/GitLab--- is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based 
+graphical interface. It also provides access control and several collaboration features
+
+Install the GiBash in our machine
+
+Git Hub(Git repository hosting service) is webbased platform to host your project code.
+
+We need to sign up for the Git Hub.
+
+Create a Repository in the Git Hub
+
+Gain the knowledge on the commit message by making some changes
+
+Lets clone the repository into our local machine by using the command git clone:
+
+Example: git clone https://github.com/yakubpashaa/samplerepo1.git
+f)4U96^/
+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
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+24-08-2021
+
+Git Commands:
+
+git branch 
+
+git pull
+
+git status
+
+git commit -m "commit message"
+
+git add: 
+
+The "add" command marks changes to be included in the next commit.
+Specifies the files you want to add to the Staging Area. ...
+Adds all modifications to the Staging Area. ...
+Adds all changes to existing files to the Staging Area.
+
+git commit -m : 
+
+It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and 
+the commit message. Every commit forms a parent-child relationship. When we add a file in Git, it will take place in the staging area. 
+A commit command is used to fetch updates from the staging area to the repository.
+
+git status:
+
+git push origin main:
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+25-08-2021
+
+git branch feature1			-	to create a new branch
+git checkout -b feature1		-	to create and checkout to the newly created branch
+Pull Request
+Reviewers
+Inviting Collaborators
+Merging the PR
+Git GUI
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+26-08-2021
+
+Step1: Create a Linux Machine
+Step2: Updated the packages
+Step3: Check the version of Git (we got an error git command not found), we have installed git package in linux machine by using the below command:
+
+YUM is the primary package management tool for installing, updating, removing, and managing software packages in Red Hat Enterprise Linux
+
+sudo yum install git -y
+
+Check the version now
+
+git version 2.32.0
+
+https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git
+
+git config --global user.name "rm440264"
+git config --global user.email "rm440264@gmail.com"
+
+git checkout -b (name of the new branch)
+git checkout (name of the new branch)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+27-08-2021
+
+git branch -D (name of the new branch)
+git push origin --delete feature2 -- command used to delete the branch in remote repo
+git stash save --- git stash apply -- git stash 0,1,2,3..
+git log --show you the commit history
+git revert (commit ID)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
